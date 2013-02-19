@@ -2,7 +2,7 @@
   "name": "paddle",
   "description": "Your mobile phone as a game paddle",
   "author": "Yuan Chuan",
-  "license": "MIT" 
+  "license": "Creative Common License" 
   "version": "0.1.0",
   "main": "app.js",
   "dependencies": {
