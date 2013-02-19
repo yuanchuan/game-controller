@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Mario</title>
+
+    <link href="mario/default.css" rel="stylesheet">
+    
+    <script src="mario/default.js"></script>
+    <script src="mario/load.js"></script>
+    <script src="mario/quadrants.js"></script>
+    <script src="mario/things.js"></script>
+    <script src="mario/mario.js"></script>
+    <script src="mario/maps.js"></script>
+    <script src="mario/sounds.js"></script> 
+    <script src="mario/utility.js"></script> 
+    <script src="mario/JSList.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socketio = io.connect();
+      socketio.on('keyup', keyup);
+      socketio.on('keydown', keydown);
+    </script>        
+
+</head>
+<body onload="load()" onkeydown="keydown(event)" onkeyup="keyup(event)">
+</body>
+</html> 
+

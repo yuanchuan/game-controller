@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Super Mario</title>
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+  <style>
+    * { 
+      -moz-box-sizing: border-box; 
+      -webkit-box-sizing: border-box; 
+      box-sizing: border-box; 
+      -moz-user-select: -moz-none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .btn {
+      display: inline-block;
+      position:absolute;
+      top:50%;
+      margin-top:-40px;
+      width:80px;
+      height:80px;
+      line-height:70px;
+      text-align:center;
+      font-size: 50px;
+      color:#333;
+      padding: 6px 20px;
+      background: #b9c8df;
+      border: 1px solid rgba(0,0,20,0.15);
+      border-radius: 80px;
+      transition: all 0.3s ease-out;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,20,0.4), inset 0 3px 2px rgba(255,255,255,.22), inset 0 -3px 2px rgba(0,0,20,.15), inset 0 20px 10px rgba(255,255,255,.12);
+      text-shadow: 0px 1px 1px rgba(255,255,255,.6);
+    }
+    .btn:hover  { 
+      background: #c0cde2; 
+    }  
+    .btn:hover, .btn:active { 
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0,0,20,0.4), 0 0 1px 8px rgba(0,0,20,0.1), inset 0 3px 2px rgba(255,255,255,.22), inset 0 -1px 2px rgba(0,0,20,.15), inset 0 20px 10px rgba(255,255,255,.12); 
+    }
+
+    .btn-up, .btn-down {
+      margin-left:1.5em;
+    }
+    .btn-up {
+      margin-top:-2em;
+    }
+    .btn-down {
+      margin-top:.5em;
+    }
+    .btn-right {
+      margin-left:3em;
+    }
+    .btn-fire, .btn-jump {
+      right:.3em;
+    }
+    .btn-fire {
+      right:2.5em;
+    } 
+
+    @media screen and (max-width: 480px) {
+      .btn {      
+        margin-top:0;
+        left:50%;
+        top:2em;
+        margin-left:-1em;
+      }
+      .btn-up {
+        top: .5em;
+      }
+      .btn-down {
+        margin-top: 1.5em;
+      }
+      .btn-left {
+        margin-left:-2em;
+      }
+      .btn-right {
+        margin-left:0em;
+      }
+      .btn-fire, .btn-jump {
+        top:5.8em;
+        margin-left:-2em;
+      }           
+      .btn-jump {
+        margin-left:0em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <span data-key="41" class="btn btn-up">U</span>
+    </br>
+    <span data-key="37" class="btn btn-left">L</span>
+    <span data-key="39" class="btn btn-right">R</span>
+    </br>
+    <span data-key="40" class="btn btn-down"> D </span>
+    <span data-key="16" class="btn btn-fire">F</span> 
+    <span data-key="38" class="btn btn-jump">J</span>
+  </p>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+
+    var socketio = io.connect()
+      , buttons = [].slice.call(
+          document.getElementsByClassName('btn')
+        );
+    buttons.forEach(function(btn) {
+      var key = +btn.getAttribute('data-key');
+
+      btn.addEventListener('touchstart', function(e) {
+        socketio.emit("keydown", {which: key});
+      });   
+
+      btn.addEventListener('touchend', function(e) {
+        socketio.emit("keyup", {which: key});
+      }); 
+    });
+
+  </script>
+</body>
+</html>

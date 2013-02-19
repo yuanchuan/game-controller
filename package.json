@@ -1,0 +1,16 @@
+{
+  "name": "paddle",
+  "description": "Your mobile phone as a game paddle",
+  "author": "Yuan Chuan",
+  "license": "MIT" 
+  "version": "0.1.0",
+  "main": "app.js",
+  "dependencies": {
+    "node-static": "~0.6.6",
+    "socket.io": "~0.9.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuanchuan/paddle.git"
+  }
+}
