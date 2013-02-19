@@ -1,0 +1,3 @@
+[submodule "games/mario/mario"]
+	path = games/mario/mario
+	url = git://github.com/yuanchuan/FullScreenMario.git
