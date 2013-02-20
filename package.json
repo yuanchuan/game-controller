@@ -1,8 +1,8 @@
 {
-  "name": "game-paddle",
-  "description": "Your mobile phone as a game paddle",
+  "name": "game-controller",
+  "description": "Your mobile phone as a game conroller",
   "author": "Yuan Chuan",
-  "license": "Creative Common License",
+  "license": "Creative Commons Attribution License 3.0",
   "version": "0.1.0",
   "main": "app.js",
   "dependencies": {
@@ -11,6 +11,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yuanchuan/paddle.git"
+    "url": "git://github.com/yuanchuan/game-controller.git"
   }
 }

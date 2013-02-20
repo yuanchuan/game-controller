@@ -1,6 +1,6 @@
-#game-paddle
+#game-controller
 
-Inspired by [controldeck.js](https://github.com/dfcb/controldeck.js). With the same idea, this repo shows how to turn a mobile phone into a game paddle.
+Inspired by [controldeck.js](https://github.com/dfcb/controldeck.js). With the same idea, this repo shows how to turn a mobile phone into a game controller.
 
 Our first game is Super Mario which is written by [@Diogenesthecynic](https://github.com/Diogenesthecynic/) in javascript. 
 
@@ -10,8 +10,8 @@ Our first game is Super Mario which is written by [@Diogenesthecynic](https://gi
 
 2. Download this repo and install required packages.
         
-        git clone git://github.com/yuanchuan/paddle.git
-        cd paddle 
+        git clone git://github.com/yuanchuan/game-controller.git
+        cd game-controller 
         npm install
 
 3. Run the server.
