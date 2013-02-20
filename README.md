@@ -14,11 +14,11 @@ Our first game is Super Mario which is written by [@Diogenesthecynic](https://gi
         cd game-controller 
         npm install
 
-3. Download games with submodule.
+3. Download the game with submodule.
 
         git submodule init && git submodule update
 
-4. Run the server.
+4. Run the webserver.
 
         node app.js
 
