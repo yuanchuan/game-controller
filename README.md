@@ -20,8 +20,8 @@ Our first game is Super Mario which is written by [@Diogenesthecynic](https://gi
 
 4. Open your browser and have fun!
 
-      * The game page: [http://localhost:3000/mario](http://localhost:3000/mario) 
-      * The controller page: [http://localhost:3000/mario/controller.html](http://localhost:3000/mario/controller.html)
+    * The game page: [http://localhost:3000/mario](http://localhost:3000/mario) 
+    * The controller page: [http://localhost:3000/mario/controller.html](http://localhost:3000/mario/controller.html)
 
 ###License
 
