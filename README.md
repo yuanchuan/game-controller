@@ -1,12 +1,12 @@
-#Paddle
+#game-paddle
 
 Inspired by [controldeck.js](https://github.com/dfcb/controldeck.js). With the same idea, this repo shows how to turn a mobile phone into a game paddle.
 
-Our first game is Super Mario. There's a javascript version of it written by [@Diogenesthecynic](https://github.com/Diogenesthecynic/). 
+Our first game is Super Mario which is written by [@Diogenesthecynic](https://github.com/Diogenesthecynic/) in javascript. 
 
 ### How to Play
 
-1. First, Make sure your have [node](http://nodejs.org/) installed, if not, follow the [installation guide](https://github.com/joyent/node/wiki/Installation).
+1. First, make sure your have [node](http://nodejs.org/) installed, if not, follow the [installation guide](https://github.com/joyent/node/wiki/Installation).
 
 2. Download this repo and install required packages.
         
@@ -18,10 +18,10 @@ Our first game is Super Mario. There's a javascript version of it written by [@D
 
         node app.js
 
-4. Open your browser and have fun:  
+4. Open your browser and have fun!
 
-  * The game page: [http://localhost:3000/mario](http://localhost:3000/mario) 
-  * The paddle page: [http://localhost:3000/mario/controller.html](http://localhost:3000/mario/controller.html)
+      * The game page: [http://localhost:3000/mario](http://localhost:3000/mario) 
+      * The controller page: [http://localhost:3000/mario/controller.html](http://localhost:3000/mario/controller.html)
 
 ###License
 
