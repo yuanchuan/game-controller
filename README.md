@@ -8,21 +8,20 @@ Our first game is Super Mario which is written by [@Diogenesthecynic](https://gi
 
 1. First, make sure your have [node](http://nodejs.org/) installed, if not, follow the [installation guide](https://github.com/joyent/node/wiki/Installation).
 
-2. Download this repo and install required packages.
+2. Download this repo from github and get the submodules.
         
-        git clone git://github.com/yuanchuan/game-controller.git
-        cd game-controller 
-        npm install
+```bash
+git clone git://github.com/yuanchuan/game-controller.git
+cd game-controller 
+git submodule update --init
+```
+3. Install required packages and run.
 
-3. Download the game with submodule.
-
-        git submodule init && git submodule update
-
-4. Run the webserver.
-
-        node app.js
-
-5. Open your browser and have fun!
+```bash
+npm install
+node app.js
+```
+4. Open your browser and have fun!
 
   - The game page: [http://localhost:3000/mario/index.html](http://localhost:3000/mario/) 
   - The controller page: [http://localhost:3000/mario/controller.html](http://localhost:3000/mario/controller.html)
