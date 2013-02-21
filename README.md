@@ -1,4 +1,4 @@
-#game-controller
+
 
 Inspired by [controldeck.js](https://github.com/dfcb/controldeck.js). With the same idea, this repo shows how to turn a mobile phone into a game controller.
 
@@ -10,17 +10,15 @@ Our first game is Super Mario which is written by [@Diogenesthecynic](https://gi
 
 2. Download this repo from github and get the submodules.
         
-```bash
-git clone git://github.com/yuanchuan/game-controller.git
-cd game-controller 
-git submodule update --init
-```
+        git clone git://github.com/yuanchuan/game-controller.git
+        cd game-controller 
+        git submodule update --init
+
 3. Install required packages and run.
 
-```bash
-npm install
-node app.js
-```
+        npm install
+        node app.js
+
 4. Open your browser and have fun!
 
   - The game page: [http://localhost:3000/mario/index.html](http://localhost:3000/mario/) 
