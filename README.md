@@ -1,4 +1,4 @@
-
+# game-controller
 
 Inspired by [controldeck.js](https://github.com/dfcb/controldeck.js). With the same idea, this repo shows how to turn a mobile phone into a game controller.
 
